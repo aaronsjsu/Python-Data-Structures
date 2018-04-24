@@ -1,0 +1,18 @@
+A singly linked list is a type of linear data structure that stores data
+elements in a node. Each node in the linked list is linked by a pointer.
+Each node points to the next node and is pointed to by the previous node
+(except the head and tail nodes). A graphical representation would look like:
+
+ -----     -----     -----     -----     -----
+ | A | --> | B | --> | C | --> | D | --> | E | --> null
+ -----     -----     -----     -----     -----
+
+Where A is the head and E is the tail, and each box represent a node while
+each arrow represents a reference/pointer to the next node.
+
+
+Pros and Cons:
+Linked lists are extremely efficient with insertion/deletion, but they
+don't allow random access (elements can only be accessed sequentially).
+Also, linked lists take up extra memory because each node not only contains
+the data, but also a reference to the next node.
