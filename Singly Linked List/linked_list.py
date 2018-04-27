@@ -46,20 +46,16 @@ class LinkedList:
             data: The data to initialize the linked list with, default
                   value is None.
         """
-        if (type(data) is list or type(data) is tuple):
-            # Deals with the case that data is a list or tuple.
-            new_list = LinkedList()
-            for i in data:
-                new_list.add_to_end(i)
-            self.head = new_list.head
-        elif (type(data) is LinkedList):
-            # Deals with the case that data is another LinkedList object.
+        if (type(data) is list or type(data) is tuple
+            or type(data) is LinkedList):
+            # Deals with the case that data is a list, tuple or
+            # another LinkedList object.
             new_list = LinkedList()
             for i in data:
                 new_list.add_to_end(i)
             self.head = new_list.head
         elif data is None:
-            self.head = data
+            self.head = None
         else:
             self.head = Node(data)
 
@@ -246,7 +242,7 @@ class LinkedList:
         return self.peek(self.size() - 1)
 
     def poll(self, index):
-        """Returns and removes the data at a specified indexself.
+        """Returns and removes the data at a specified index.
 
         This method returns the data stored in a node at the specified
         index in the linked list. It then removes the node from the
