@@ -1,0 +1,12 @@
+A queue is a type of linear data structure that stores data similar to how
+data is stored in a list. In queue.py I actually create a queue by using
+a list. A queue is very similar to a stack, the main difference being how
+data is retrieved. A queue follows FIFO (first in first out). It's easy to
+think about this by thinking about a restaurant. Typically, the first
+people to order are the first ones to get their food. That's how this data
+structure works.
+
+Pros and Cons:
+Methods to add and remove from a queue are very efficient, also a queue helps
+manage data in a specific order. However, random access is not possible using
+a queue.
