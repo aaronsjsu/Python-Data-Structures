@@ -21,7 +21,7 @@ rob = Person("Rob", 35, ("riding", "reading", "reviewing"))
 tob = Person("Tob", 45, ("training", "teaching", "talking"))
 
 # Create LinkedList and fill it with a list containing each person
-list_of_people = LinkedList((bob, rob, tob))
+list_of_people = LinkedList([bob, rob, tob])
 
 # Loop through LinkedList
 for person in list_of_people:
@@ -38,7 +38,7 @@ list_of_people.insert_after(tob, nob)
 # Print our list to the console
 list_of_people.print_list()
 
-# Reverse out list
+# Reverse our list
 list_of_people.reverse()
 list_of_people.print_list()
 
@@ -46,7 +46,7 @@ list_of_people.print_list()
 list_of_people.remove(lob) # Removes lob from list
 print("List contains lob: " + str(list_of_people.contains(lob))) # Check if lob is gone
 also_bob = list_of_people.poll_first() # poll() methods remove and return a list element
-also_tob = list_of_people.poll(1) # Can poll() from and index too
+also_tob = list_of_people.poll(1) # Can poll() from an index too
 also_pob = list_of_people.poll_last()
 list_of_removed_people = [also_bob, also_pob, also_tob, lob]
 for person in list_of_removed_people: # Make sure our people left the list.
