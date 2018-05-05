@@ -161,7 +161,7 @@ class LinkedList:
         item is in the list. It returns True if it is, else False.
 
         Args:
-            data: The data to check if it's in the linked listself.
+            data: The data to check if it's in the linked list.
         """
         element = self.head
         while (element): # Loops through each element in the list.

@@ -75,11 +75,11 @@ class Queue:
         self.queue = list(reversed(self.queue))
 
     def clear_queue(self):
-        """Cleas/empties the queue."""
+        """Clears/empties the queue."""
         self.queue = []
 
     def is_empty(self):
-        """Checks if queue is empty, returns boolean."""
+        """Checks if queue is empty, returns a boolean."""
         return len(self.queue) == 0
 
     def print_queue(self):
