@@ -1,0 +1,9 @@
+A deque (double ended queue) is a type of linear data structure that is
+essentially a queue that allows insertion and deletion at both ends. Thus,
+a deque supports both stack and queue operations. In this file, I will
+implement a deque using a doubly linked list.
+
+Pros and Cons:
+Methods to add and remove from a deque are very efficient, also a deque helps
+manage data in a specific order. However, random access is not possible using
+a deque.
