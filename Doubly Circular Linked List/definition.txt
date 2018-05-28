@@ -1,0 +1,24 @@
+A doubly circular linked list is a type of a linked list in which all nodes
+are connected to form a circle (there is no null at the end), and each node
+contains two references, one to the previous and one to the next node. A
+graphical representation would look like:
+
+-----     -----     -----     -----     -----
+| A | <-> | B | <-> | C | <-> | D | <-> | E | <--
+-----     -----     -----     -----     -----    |
+  ^                                              |
+  |-----------------------------------------------
+
+Where each box represent a node, each arrow represents a reference,
+and both A and E point to each other (circular).
+
+
+Pros and Cons:
+This type of linked list has all the advantages of a basic linked list, with
+the disadvantage being that each node requires extra space for the second
+reference. Because this linked list is circular, any node can be used as a
+starting point, which means we can traverse the entire list by starting
+at any point. Because this is a doubly linked list, the list can be easily
+traversed in reverse order. Also, because this is a linked list, insertion
+and deletion are efficient, but random access is not allowed, since elements
+must be accessed sequentially.
