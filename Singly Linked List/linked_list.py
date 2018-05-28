@@ -2,7 +2,7 @@ class Node:
     """Node in a linked list.
 
     This class represent a node in a linked list, a node
-    could be any form of data, and each node has a pointer.
+    could be any form of data, and each node has a reference.
 
     Attributes:
         data: Keep track of the data in each node.
@@ -207,7 +207,7 @@ class LinkedList:
                 raise Exception("Item to remove does not exist")
                 return
             element = element.next
-        # Get rid of pointer/reference to the node to remove.
+        # Get rid of reference to the node to remove.
         element.next = element.next.next
 
     def peek(self, index):

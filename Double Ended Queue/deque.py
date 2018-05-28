@@ -3,7 +3,7 @@ class Node:
 
     This class represent a node in a doubly linked list, a
     node could store any type of data, and each node has
-    a pointer/reference to the prev and next nodes.
+    a reference to the prev and next nodes.
 
     Attributes:
         data: Keeps track of the data in each node.
