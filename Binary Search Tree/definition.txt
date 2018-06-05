@@ -1,0 +1,21 @@
+A binary search tree is a type of hierarchical data structure. It consists of nodes,
+each of which has a parent node, and two child nodes. The upmost node is
+called the root, and the lowest nodes are called leaves. This data structure is
+called a binary search tree because each node only has two children, and each
+node is ordered. However, in my example, I didn't balance the tree. A graphical
+representation would look like:
+
+                                A      <-- root
+                              /   \
+                             B     C
+                            / \   / \
+                           D   E F   H   <-- leaves
+
+Where each letter represents a node and each line represents a
+reference to another node.
+
+
+Pros and Cons:
+A tree can be used to store information that naturally forms a hierarchy, like
+a file system. If the tree is balanced and sorted, it could provide moderate
+insertion/deletion and moderate access/search time.
